@@ -121,8 +121,6 @@ func (c *Command) gitDir() *exec.Cmd {
 func (c *Command) commit(val string) *exec.Cmd {
 	args := []string{
 		"commit",
-		"--no-verify",
-		"--signoff",
 		fmt.Sprintf("--message=%s", val),
 	}
 
